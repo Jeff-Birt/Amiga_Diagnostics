@@ -1,0 +1,78 @@
+
+                Creating a Bootable Workbench 1.3 Floppy Disk.
+                ----------------------------------------------
+
+  1) Copy a Workbench disk using "Duplicate" from the pull down menu.
+  2) Delete all of the files NOT shown in the "Listing" below.
+  3) Unarchive the TestCard.lha file to ram:t directory.
+  4) From the CLI type "Copy all ram:t to df0:" without the quotes, where
+     df0: is the drive containing your copy of the Workbench disk.
+  5) Rename the disk to "TESTCARD" without the quotes.
+  6) NOTE:- this disk will boot up on Kickstart 2.0x to Kickstart 3.0x.
+
+  Listing:-
+  ---------
+
+     C (dir)
+       Assign                           CD
+       Echo                             Ed
+       Execute                          IconX
+       List                             Makedir
+       Path                             Run
+       SetPatch                         Version
+     Devs (dir)
+          Clipboards (dir)
+          Printers (dir)
+          Keymaps (dir)
+            gb                               
+       clipboard.device                 parallel.device
+       ramdrive.device                  serial.device
+     Expansion (dir)
+     Fonts (dir)
+     L (dir)
+       Disk-Validator                   Ram-Handler
+     Libs (dir)
+       arp.library                      asl.library
+       diskfont.library                 icon.library
+       iffparse.library                 info.library
+       mathieeedoubbas.library          mathieeedoubtrans.library
+       mathtrans.library                version.library
+     Prefs (dir)
+     S (dir)
+     System (dir)
+       SetMap                           
+     T (dir)
+     Tools (dir)
+     Trashcan (dir)
+     Utilities (dir)
+       More
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

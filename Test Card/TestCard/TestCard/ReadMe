@@ -1,0 +1,97 @@
+
+                    TESTCARD GENERATOR FOR SERVICE ENGINEERS.
+                    -----------------------------------------
+
+
+    Questions:-
+    -----------
+
+    1) Do you own an AMIGA A500 or better with 512Kb of memory.
+    2) Does this Amiga have Workbench 1.3 or better.
+    3) Are you a Television and/or Monitor service engineer.
+    4) Would you like your Amiga to become a piece of test gear for
+       the workshop instead of gathering dust in the cupboard, then
+       this software will be of use to you.
+
+----------------------------------------------------------------------------
+
+    Minimum operating requirements are:-
+    ------------------------------------
+
+    1) Standard Amiga A500 with 512Kb or more of memory.
+    2) Workbench 1.3x.
+    3) An external floppy disk drive is required.
+    4) The mouse is not used.
+    5) OCS.
+    6) PAL/NTSC Television or Monitor to be tested with connecting leads.
+    7) A second TV/Monitor for general viewing.
+    8) The software has NOT been tested on an Amiga A1000.
+    9) The software has NOT been tested on Workbench 1.2x or less.
+   10) The software has NOT been tested on Workbench 3.1x or greater.
+
+----------------------------------------------------------------------------
+
+    General information:-
+    ---------------------
+
+    This software was written using ACE basic compiler and some assembler.
+    Simple audio tones are generated for basic alignment and audio checks.
+    There is an ~IBM~ PC version that is freeware and has had extensive
+    testing and uses video modes 0 to 6. This is also supplied.
+
+    See the ~TestInfo~ text file for further information on how to use
+    this program.
+
+----------------------------------------------------------------------------
+
+    Now the legal stuff:-
+    ---------------------
+
+    This program is the copyright of (C)1998 Barry Walker with all
+    rights reserved.
+    It is freeware and no profit will be made from it, also all of the
+    files must remain unaltered, complete and intact.
+    The author is not responsible for any damage to, or loss of, or
+    failure of equipment or data caused in any way by the use of this
+    program.
+
+----------------------------------------------------------------------------
+
+    Testing evaluation:-
+    --------------------
+
+    This was tested on an A500 with various memory configurations,
+    the same A500 switched to 1MB Chip Ram and emulating WB2 using
+    the A500+ emulator, an A600 with various memory configurations,
+    the same A600 emulating WB3 with various memory configurations,
+    an A1200 with various memory configurations.
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

@@ -1,0 +1,256 @@
+
+                     Testcard Generator (C) Barry Walker.
+                     ------------------------------------
+
+With all of today's (April 1999) technology the definitive means of showimg
+images to the masses is the trusty old Cathode Ray Tube (CRT). Whether it be
+colour or black and white the "tube" has still to be beaten in price to
+performance ratio. So I decided to write a program to utilise my old A500
+AMIGA as a test tool to set up Colour Monitors/Televisions in PAL/NTSC mode.
+I may include other modes if there is enough of a response to this program.
+
+----------------------------------------------------------------------------
+
+  Safety Notice:-
+  ---------------
+
+As with all devices containing a CRT an extremely high voltage appears at
+the final anode cap (the POPPY), anything from 5KV (small oscilloscope tubes)
+to 30+KV (colour display tubes), so be VERY careful when making any internal
+adjustments as a mistake could be harmful at best or FATAL at worst.
+
+                        So again be VERY VERY CAREFUL.
+                        ------------------------------
+
+----------------------------------------------------------------------------
+
+  General Information:-
+  ---------------------
+
+The program fits onto a standard AMIGA bootable Workbench floppy disk.
+The disk MUST have a volume label named "TESTCARD". There are also some
+more testcards in the Testcard directory utilising the various standard
+AMIGA PAL video modes in the format <width>x<height>x<number of colours>,
+e.g. 320x256x32 which is obviously standard Lores 32 colour mode. To make
+the disk bootable consult your AMIGA manual on how install it.
+
+If you have a hard disk drive and have booted up the machine from the hard
+disk drive, place the floppy disk into drive DF0:.
+Open up a Shell/CLI window from a Shell/CLI icon and type in the
+following statement:-
+
+  Copy all df0: to dhx:Testcard<RETURN>
+
+where "dhx" is the volume name of the partition you want to install to,
+and "<RETURN>" is the ENTER key.
+
+----------------------------------------------------------------------------
+
+  PC Information:-
+  ----------------
+
+There is also a freeware PC version in the ~TestCard/PC~ directory. It is
+zipped up using PKZIP.EXE (not supplied), and is approximately 48KB in size.
+Any type of ANSI.SYS must be disabled from the CONFIG.SYS file (i.e. REM the
+statement out) and rebooted into a DOS command prompt. Do NOT run through
+WINDOWS (TM) at all. This is issued under the ~GPL~ terms and conditions.
+
+----------------------------------------------------------------------------
+
+  Mouse Pointer Information WB2 and WB3:-
+  ---------------------------------------
+
+When the program starts you will notice that the pointer disappears and when
+you finally Quit the program you have a ~Windows~ type pointer reappear.
+Do NOT think that you have lost your original pointer you have NOT. The
+reason for this is that a pointer is needed for normal operation of the
+AMIGA and there are a lot of people out there who use the standard pointer
+at bootup and have NOT saved a pointer in the ENVARC:Sys directory, as
+Pointer.prefs, so therefore I had to generate a pointer for you to use.
+The simplest way to get your original pointer back is to Reboot the AMIGA,
+or go to the Prefs directory and run the Pointer program to load your
+pointer back into the system, assuming you have a Pointer.prefs of your own.
+
+If the pointer does not annoy you then click on the ~PAL~ or ~NTSC~ icon.
+This will work from Workbench1.3x to Workbench3.1x and will keep the mouse
+pointer on screen all the time.
+
+----------------------------------------------------------------------------
+
+  The Program Proper:-
+  --------------------
+
+It is assumed that you have already dismantled the TV/Monitor to access the
+electronics inside. It is also assumed that you have a manual for the said
+unit under test or repair.
+
+Whether the program runs from the icon or from a floppy boot disk, the first
+screen will be a serious WARNING screen to remind you of the hazards
+involved when working with any CRT type of equipment. Press the ~ENTER~ key
+to continue.
+
+The next screen is a Hires testcard of 640x2??x16. This is so that you can
+adjust any of the external user controls that are available. These will
+probably be Brightness, Colour, Contrast, Width, Height, Horizontal shift and
+Vertical shift. When you have done all the preliminary adjustments press the
+~SPACE~ bar to continue.
+
+You are now in the program proper.
+
+If you are a qualified TV/Monitor service engineer then you need not read
+any further, the program is self explanitory. If you are not then read on.
+
+From now on a single capital letter inside brackets means a highlighted
+letter (e.g. (P) is highlighted P). The mouse is NOT used inside the program.
+To exit any screen press the ~SPACE~ bar. If there is more than one screen
+per section then the ~SPACE~ bar will eventually return you back to the
+Command window.
+
+  The Highlighted Commands:-
+  --------------------------
+
+  (W)hite raster.
+  ---------------
+This command has 3 levels from dark grey to bright white and is used to
+check Extra High Tension (EHT) regulation and picture "ballooning". This
+is generally a design problem and is not adjustable or repairable.
+
+  (P)urity.
+  ---------
+This command also has 3 levels, Red, Green and Blue, and is used to check
+the uniformity of each primary colour raster. The adjustment is usually done
+with the purity magnets and/or the scanning yoke assembly. Degaussing may
+also be rquired using a degaussing coil.
+
+  (S)tatic convergence.
+  ---------------------
+This command allows a "white cross" generated to be "centred" on the screen
+and to adjust the the scanning yoke, convergence and shift magnets/controls
+to produce the best possible centred white cross.
+
+  (D)ynamic convergence.
+  ----------------------
+This command generates a "crosshatch" picture to set all the neccessary
+controls for best RGB convergence to produce white lines without coloured
+edges to them. It also helps in the setting up the "pincushion, barrel and
+trapezoid" error circuits. The adjustments are usually made with the
+relevant error circuit correction controls.
+
+  (F)ocus dots.
+  -------------
+This command generates lines of dots so that the focus circuits can be
+adjusted for optimum focus at the extreme corners of the picture, with the
+best possible focus at the centre.
+
+  (B)eam limiter.
+  ---------------
+This command generates bright white and black blocks to check line sync
+pulling and beam limiting. This is probably a design problem and will not
+be adjustable at all. It is usually more of a problem on TV systems or CVBS
+type monitors.
+
+  (V)ertical sync and (H)orizontal sync.
+  --------------------------------------
+These commands check the immunity for a device under test to reject a signal
+interfering with the sync circuits. This is probably a design problem and
+will not be adjustable. It may however be a decoupling fault. It is usually
+more of a problem on TV systems or CVBS type monitors.
+
+  (I)nterference gratings.
+  ------------------------
+This is a none standard test. The command generates a series of black and
+white vertical lines 1 pixel wide each to create an interference pattern
+on the screen. There are 2 levels the first is used for TV systems and the
+second is used for dedicated monitors. It is used to check the shadowmask
+geometry against the front screen phosphors and the gun assembly. It is
+purely a check and will never be curable if it is a problem.
+If you see a pattern like "||||||" then this is a very good CRT.
+If you see a pattern like "))||((" then this is a good CRT.
+If you see a pattern like "((||))" then this ia also a good CRT.
+If you see no pattern at all then you have the perfect CRT (impossible).
+If you see a random shaped set of patterns then the CRT is poor to average.
+You may need to vary the brightness to see this effect.
+
+  (G)ratings for frequency response.
+  ----------------------------------
+This is the standard frequency grating test and shows the bandwidth of the
+video circuits and tube coupling circuits. A TV system may not show the
+bottom band due to the fact that its frequency limit is approximately 5MHZ.
+The frequencies are approximately, 500KHZ, 1MHZ, 2MHZ, 4MHZ and 8MHZ.
+
+  (C)olourbar.
+  ------------
+This command generates the 8 colours of the colourbar check. It is used to
+check colour flaring on very bright and/or very high saturation images and
+is usually an indication of an aging CRT itself. It is generally a fault and
+can be curable, but it is probably cheaper to buy a brand new unit.
+
+  (L)evels of grey.
+  -----------------
+This command generates 8 increasing levels of grey to check the black to
+white linearity of the analogue video circuits. This is commonly known as
+the greyscale test.
+
+  (T)estcard.
+  -----------
+And finally a repeat of the initial testcard again. It is a Hires screen of
+640x2??x16 and is used to reset any external user controls so that it looks
+correct on the TV/Monitor under test.
+
+  (A)udio test screen.
+  --------------------
+This command places you into a second screen for basic audio tests.
+Each time an audio test is required the TESTCARD screen will be displayed.
+On exiting the TESTCARD the sound will be turned off and you will be
+returned to the main screen for the video checks.
+
+The Stereo sound checks.
+  (1) Sinewaves of 400Hz Left channel and 1000Hz Right channel.
+  (2) The opposite of (1). Both are for general audio checks.
+  (3) Both channels 1000Hz for speaker phase checks.
+  (4) As (3) but at 400Hz.
+
+Mono sound checks.
+Connect the left and right channels together (for older AMIGAS only).
+These two checks are for the RF mode only.
+  (5) 1000Hz Sinewave for aligning the IF and demodulator in TV sets.
+  (6) As (5) but at 400Hz.
+
+  (V)ideo test screen.
+  --------------------
+This command returns you back to the main screen without any audio.
+
+  (Q)uit.
+  -------
+This command will either quit the program into a CLI window or will prompt
+if you want to reboot the machine, reminding you to remove the floppy disk
+if it is in the floppy boot drive.
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+  Mr Barry Walker,
+  70 King George Road,
+  Loughborough,
+  Leicestershire,
+  LE11 2PA.
+
+  Email on either:-
+
+  wisecracker@tesco.net
+
+  BYE...
+
+============================================================================

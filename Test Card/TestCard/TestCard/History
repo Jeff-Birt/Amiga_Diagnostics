@@ -1,0 +1,88 @@
+                              TestCard history.
+                              -----------------
+  21-5-1999.
+  ----------
+  1) Version 1.00.00, initial release on 21-5-1999.
+
+  12-6-1999.
+  ----------
+  2) Version 1.00.10, standard sound checks added.
+
+  15-6-1999.
+  ----------
+  3) Version 1.00.11, minor changes to text files.
+
+  5-7-1999.
+  ---------
+  4) Version 1.00.12, added files for all Workbench versions to OS3.1.
+
+  6-8-1999.
+  ---------
+  5) Version 1.10.00, greyscale added.
+
+  16-8-1999.
+  ----------
+  6) Version 1.20.00, rewritten to make operation easier.
+
+  21-9-1999.
+  ----------
+  7) Version 2.00.00, a full NTSC version added along with a TestCard
+     program launcher.
+
+  24-1-2000.
+  ----------
+  8) Version 2.00.10, final release.
+
+  1-2-2000.
+  ---------
+  9) Version 2.00.11, remove the ~S~ and the ~Devs~ directories from the
+     package and add notes about the mouse pointer to the ~TestInfo~ file.
+     Put the whole package into its' own directory called ~TestCard~.
+
+  5-3-2000.
+  ---------
+  10) Version 2.00.12, make minor changes to the text files.
+
+  5-11-2000.
+  ----------
+  11) Version 2.00.20, minor modification to run on a standard A500.
+
+  30-12-2001.
+  -----------
+  12) Version 2.00.25, correct error in the ~Connecting_Cables~ file.
+
+  2-4-2002.
+  ---------
+  13) Version 3.00.00, final issue under the ~GPL~ Licence terms and
+      conditions along with the FULL ~IBM~ PC version archive also under
+      ~GPL~ Licence terms and conditions.
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

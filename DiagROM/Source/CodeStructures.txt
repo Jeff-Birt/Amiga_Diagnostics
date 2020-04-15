@@ -1,0 +1,28 @@
+Some Codestructures:
+
+To setup a new menu:
+
+Menus  - Contains a list of pointers to the menu Items-structure, "Menunumber" is used to determine what menu to print. Begins with 0 for mainmenu.
+MenuCode - Contains a list of pointers to where executable code is located after same order as "menunumber"
+MenuKeys - Contains pointer to list of keyentries to trigger menuitems in same order as menunumber
+
+Menuitemsstructure:
+	Pointer to menuheadertext
+	Pointers to menuitemtexts
+	nullterminator tells end of menu.
+
+MenuCode:
+	Pointers to were the executeable code is in order from menu.
+
+MenuKeys:
+	one char telling what key to press to activate menuitem
+
+
+IF doing a submenusystem, for handling variables etc after menuitems. Wite a pointer to where menu is located at "Menu-V(a6)"
+at MenuVariable-V(a6) you store your pointer to where your variables is.
+structure looks like: 
+Word:  Color of string
+Longword: Pointer to string to show after menuitem.
+one per item.. if null is detected, no more variables will be printed.
+you need to in your code jump to PrintMenu, then GetInput and handle the results yourself. check the "AudioSimple" for examplecode
+"GetInput" will handle cursorkeys etc.. 

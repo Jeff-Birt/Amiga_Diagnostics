@@ -1,0 +1,108 @@
+The DiagRom startup process explained: (Work in progress on this)
+
+COLORCODES AT END OF TEXT
+=========================
+
+IF Serialoutput is strange. you MIGHT have to check paula and affected ICs disturbing serialoutput.
+
+
+
+First Set powerled to HIGH. (so user should notice on the powerled that ROM works as all Amigas (except very early) start with led HALF bright)
+(when telling something is printed at this strage, it is via the SERIALPORT, not the screen)
+
+Prints Versiondata on Serialport.	
+
+but FIRST Prints:
+<number of binary chars>
+"Garbage before this text was binary numbers: 1, 2, 4, 8, 16, 32, 64, 128, 240, 15, 170 and 85
+To help you find biterrors to paula. Now starting normal startuptext etc"
+
+
+
+Prints "- Parallel Code $ff - Start of ROM, CPU Seems somewhat alive" on Serialport, also set parallelport to $ff
+
+Sets PRIMITIVE Exceptionhandles, will print data on serialport at an exception and try to flash screen with colorcodes.
+
+Checks status of mouseports. (will be moved in startup later I guess)
+
+Sets up IRQ and DMA registes (printing status on serialport, DONE is printed AFTER the mode is set)
+
+Set Screencolor to Grey, do a loopbacktest, change greycolor while doing this.
+(this is supposed to turn OFF serialport of a loopbackadapter is attached, this however doesn't work at this stage)
+
+Prints "- Parallel Code $fe - Test UDS/LDS line" on serial and start test of tests to check if cpu is able to do proper even/odd writes.
+
+Prints "- Parallel Code $fd - Start of chipmemdetection" on serial and set parallelport, start to detect chipmem  Screen flickers in GREEN/BLACK while doing this.
+
+Also prints status on serialport while detecting, if failed data written data and read data is printed., Screen flashes in GREEN/RED if failure.
+IF a working memoryblock is found, failure will be taken as end of chipmem.
+While detecting current address checked is printed. also number of working 32KB blocks found. Powerled is also flashing.
+After detection is complete, it shows start and end address of chipmem.
+
+Prints "- Parallel Code $fc - Start of motherboard fastmemdetection" on serial and start to detect fastmem
+
+Screen is set to different values of blue while this is happening. changing on every different block being tested
+IF left mousebuttin is pressed at this stage, memorydetection will be canceled.
+
+Prints "- Parallel Code $fb - Memorydetection done" on Serial
+
+Prints "- Parallel Code $fa - Starting to use detected memory" on Serial.  Memory is now getting used, crash here means you have issues using memory.
+
+	if no chipmem detected and if fastmem is found fastmemis used, unable to put data on screen,
+	instead screen will flash when chars is printed on screen.  IF LMB is pressed during poweron, Fastmode will be forced.
+	(if no fastmem avaible, chipmem is used but screen is not turned on)
+
+	If no memory is found atall, a bright green/dark green screen will be flashing on screen and powerled flashing telling user no memory is avaible.
+	also a message will be sent to serialport.
+
+	END of allocated block will be used. if the RIGHT mousebutton was pressed during poweron, the beginning will be used instead.
+
+Prints detected memory in serialport, and Basememoryaddress.  Basememory is the address where the ROM uses as workspace.
+
+Prints "- Parallel Code $f9 - Detected memory in use, we now have a stack etc" on serial. if you come so far. your machne can handle memory.
+
+Setting up screen, printing data on serialport.  "Done" is printed AFTER the value is set, so if your machine do not print "Done" after:
+	"Set Start of copper (COP1LCH $dff080): Done"  then your machine crashed while setting that register.
+
+Sets up more advanced exceptionhandlingcode, will be able to print data on screen etc.
+
+Printing "- Parallel Code $f8 - Starting up screen, text echoed to serialport" to serialport. now stuff will be printed on screen AND serialport
+	Meaning that you will have a duplicate of versionstring etc. 
+
+(FROM This point, Prints will mean that data is printed ON Screen, and only on serialport if serialport is enabled)
+
+Testing if we have a working raster (by simply reading beamposition, wait for a long time and read it again, if it is different the system guess we have a working raster. this will make timings better.
+
+Prompt user to press a key via serialport or mouse or press RMB. if not, serialoutput will be disabled from this point.
+
+
+
+Prints Menu and starts rom.
+
+
+-----------------------------
+
+COLORCODES:
+
+NOTE: Sometimes hardwareproblems might do that colorcodes are not visible. text is also dumped on serialport.
+
+
+Green/Black		Detecting Chipmem
+Green/Red		Detected Chipmemerrors
+Green/Dark Green	No Memory detected
+Red/White		CPU Bus Error
+Red/Purple		Address Error
+Red/Cyan		Illegal Instruction
+Red/Yellow		Division By Zero
+Red/Blue		Chk Instruction
+Black/White		TrapV Instruction
+Black/Purple		Privilege violation
+Black/Cyan		Trace
+Black/Yellow		Unimplemented Intruction
+
+
+No Chipmem, Fastmem detected:
+Flashing bars on screen when chars is printed. Text output on Serialport 9600BPS
+Can also be forced by holding left mousebutton during poweron, if no fastmem, chipmem is used but no screen is turned on.
+
+

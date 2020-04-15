@@ -1,0 +1,77 @@
+     TestCard (dir)
+          C (dir)
+            Switch_to_NTSC                   Switch_to_PAL
+       640x200x16                       640x256x16
+       ColourTest                       Connecting_Cables
+       Connecting_Cables.info           NTSC
+       NTSC.info                        OffWB2
+       OffWB3                           OnWB2
+       OnWB3                            PAL
+       PAL.info                         ReadMe
+       ReadMe.info                      Specifications
+       Specifications.info              TestCardWB2x
+       TestCardWB2x.info                TestCardWB3x
+       TestCardWB3x.info                TestInfo
+       TestInfo.info
+     System (dir)
+       SetMap                           
+     Fonts (dir)
+     Libs (dir)
+       arp.library                      asl.library
+       diskfont.library                 icon.library
+       iffparse.library                 info.library
+       mathieeedoubbas.library          mathieeedoubtrans.library
+       mathtrans.library                version.library
+     S (dir)
+       Startup-Sequence                 
+     T (dir)
+     Devs (dir)
+          Keymaps (dir)
+            gb                               
+          Printers (dir)
+          Clipboards (dir)
+       clipboard.device                 parallel.device
+       ramdrive.device                  serial.device
+       System-Configuration             
+     C (dir)
+       Assign                           CD
+       Echo                             Ed
+       Execute                          IconX
+       List                             Makedir
+       Path                             Run
+       SetPatch                         Version
+     L (dir)
+       Disk-Validator                   Ram-Handler
+     Utilities (dir)
+       More                             
+  TestCard.info
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

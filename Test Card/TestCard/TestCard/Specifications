@@ -1,0 +1,132 @@
+
+                 Specifications For The TestCard Generator.
+                 ------------------------------------------
+
+  Technical Specifications For The AMIGA Range Of Computers:-
+  -----------------------------------------------------------
+
+  Test Signals...................  1) White Levels.
+                                   2) Purity.
+                                   3) Static Convergence.
+                                   4) Dynamic Convergence.
+                                   5) Focus Dots.
+                                   6) Beam Limiter.
+                                   7) Vertical Sync' Check.
+                                   8) Horizontal Sync' Check.
+                                   9) Interference Gratings.
+                                  10) Frequency Response.
+                                  11) Colour Bars.
+                                  12) Greyscales.
+                                  13) Full NON Interlaced TestCard.
+                                  14) Various Audio Signals.
+  Outputs........................  1) RF Output, dependant on the Country
+                                      of Origin for Frequency Bands, Chroma
+                                      and Sound Carriers/Offsets etc.. etc..
+                                   2) CVBS (Composite Video). Note that some
+                                      AMIGA models will ONLY have a Black
+                                      and White CVBS mode.
+                                   3) RGB Digital.
+                                   4) RGB Analogue.
+                                   5) Various Sync' Modes and other
+                                      facilities.
+  Output Levels..................  1) RF Output, Enough! from an RF modulator
+                                      into 75 Ohms, (from a PHONO/RCA socket
+                                      for the U.K.).
+                                   2) CVBS, 1 Volt Peak to Peak into 75 Ohms
+                                      from a PHONO/RCA socket.
+                                   3) RGB Digital, TTL level from a 23 Way
+                                      ~D~ type plug.
+                                   4) RGB Analogue, 0.7 Volts Peak to Peak
+                                      into 75 Ohms, from a 23 Way ~D~ type
+                                      plug.
+                                   5) Sync' Modes at TTL level, (active
+                                      low), from a 23 Way ~D~ type plug.
+                                   6) Other facilities at TTL level, (active
+                                      low), from a 23 Way ~D~ type plug.
+  External Inputs................  None at all.
+  Line And Frame Frequencies.....  Dependant on the Country of Origin.
+  Audio Facilities...............  1) Four Stereo' modes for direct
+                                      connections to Stereo' TVs and
+                                      Monitors, from 2 PHONO/RCA scokets.
+                                   2) Two Mono' modes for use through the
+                                      RF modulator, (from 2 PHONO/RCA
+                                      sockets if required).
+  Audio Output Levels............  Greater than 0.5 Volts Peak to Peak into
+                                   10 KilOhms on each Channel for the
+                                   direct connection Stereo' modes.
+  Extras.........................  Two seperate TestCards, one of
+                                   320x512x32, (OCS), and one of
+                                   1280x512x4, (ECS). Also PAL/NTSC mode
+                                   switching software. There is also a
+                                   COMPLETE package for the ~PC~ using
+                                   STANDARD CGA to VGA modes, see below.
+  Menu Driven....................  Yes, only the Keyboard is required, the
+                                   Mouse is NOT used.
+  Original Copyright.............  (C)2002 Barry Walker, G0LCU.
+
+============================================================================
+
+  Technical Specifications For The ~IBM~ Compatible Range Of Computers:-
+  ----------------------------------------------------------------------
+  
+  Test Signals...................  1) Bright White Screen.
+                                   2) Purity.
+                                   3) Static Convergence.
+                                   4) Dynamic Convergence.
+                                   5) Focus Dots.
+                                   6) Vertical Sync' Check.
+                                   7) Horizontal Sync' Check.
+                                   8) Beam Limiter.
+                                   9) White Levels.
+                                  10) Interference Gratings.
+                                  11) Frequency Response.
+                                  12) Colour Bars.
+                                  13) Multi Colours and Rerun.
+                                  14) Full TestCard.
+  Outputs........................  Completely dependant on the VIDEO
+                                   ADAPTOR in use.
+  Output Levels..................  Completely dependant on the VIDEO
+                                   ADAPTOR in use.
+  External Inputs................  None at all.
+  Line And Frame Frequencies.....  Completely dependant on the VIDEO MODE
+                                   and ADAPTOR in use.
+  Audio Facilities...............  None at all.
+  Extras.........................  Seperate VGA and EGA TestCards as
+                                   executables.
+  Menu Driven....................  None at all. The program is sequential
+                                   only and ALL of the relevant text is
+                                   inside the program. It is designed to
+                                   work from MS-DOS 6.22 (TM) down to
+                                   MS-DOS 3.3x (TM), and NOT through
+                                   Windows (TM) at all.
+  Original Copyright.............  (C)2002 Barry Walker, G0LCU.
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

@@ -1,0 +1,63 @@
+
+                  Important Information About This Package.
+                  -----------------------------------------
+
+  1) Copy ~Monitest.zip~ to an MS-DOS (TM) formatted PC, 3.5 Inch,
+     720KB or 1.44MB floppy disk labelled ~TESTCARD~.
+  2) Unzip the file ~Monitest.zip~ using ~PKUNZIP.EXE~ in the following
+     format:-
+
+                    PKUNZIP.EXE -d MONITEST.ZIP <RETURN>
+
+  3) The whole archive will expand into a 720KB disk easily with the
+     directory structure intact.
+  4) Reboot the PC into a very basic MS-DOS 6.22 (TM) or LESS.
+  5) Do NOT reboot into WINDOWS (TM) at all.
+  6) From the ~TESTCARD~ disk type:-
+
+                           CD TESTCARD <RETURN>
+
+  7) Now type:-
+
+                               RUN <RETURN>
+
+  8) Now the very basic ~TESTCARD~ program will run.
+  9) The whole package is now released under the ~GPL~ Licence terms
+     and conditions.
+ 10) For the advanced ~TESTCARD~ program do 6) again.
+ 11) Now type:-
+
+                             FULLTEST <RETURN>
+
+ 12) Original Copyright:- (C)2002 Barry Walker, G0LCU.
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================
+
+    Author of the TestGear Projects in the ~hard/hack~ drawer of AMINET.
+
+============================================================================

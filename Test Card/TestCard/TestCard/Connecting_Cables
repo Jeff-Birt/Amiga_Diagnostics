@@ -1,0 +1,66 @@
+
+
+                The connecting cables for the TestCard generator.
+                -------------------------------------------------
+
+
+           AMIGA VIDEO OUTPUT.      TO      MONITOR VIDEO/AUDIO INPUT.
+           -------------------              --------------------------
+
+    23 PIN FEMALE "D" TYPE PIN NUMBER.    PERITEL (SCART) PLUG PIN MUNBER.
+
+          3  ------------------------ RED ------------------------ 15
+          4  ----------------------- GREEN ----------------------- 11
+          5  ------------------------ BLUE -----------------------  7
+          10 ------------------- COMPOSITE SYNC ------------------ 20
+          16 --------------------- RED GROUND -------------------- 13
+          17 -------------------- GREEN GROUND -------------------  9
+          18 --------------------- BLUE GROUND -------------------  5
+          19 ---------------- COMPOSITE SYNC GROUND -------------- 18
+          NC                                     AUDIO INPUT LEFT-  6
+          NC                                  COMMON AUDIO GROUND-  4
+          NC                                    AUDIO INPUT RIGHT-  2
+
+----------------------------------------------------------------------------
+
+          A TV connecting cable is supplied with all standard AMIGAS.
+
+----------------------------------------------------------------------------
+
+        AMIGA CVBS OUTPUT.            TO            MONITOR CVBS INPUT.
+        ------------------                          -------------------
+
+        PHONO PLUG INNER      COAXIAL CABLE INNER      PHONO PLUG INNER
+        PHONO PLUG OUTER      COAXIAL CABLE BRAID      PHONO PLUG OUTER
+
+ (A copy of this cable can also be used for the AMIGAS stereo audio outputs.)
+
+============================================================================
+
+  Acknowledgements:-
+  ------------------
+
+First of all many thanks to my wife Tricia who allows me to spend many hours
+on my computers.
+
+Also to David Benn and Herbert Breuer for the ACE/AIDE combination supplied
+on an AMIGA FORMAT floppy disk which made it easy to compile this program.
+
+And finally to anyone else who I may have neglected or forgotten.
+
+----------------------------------------------------------------------------
+
+    Mr Barry Walker,
+    70 King George Road,
+    Loughborough,
+    Leicestershire,
+    LE11 2PA,
+    England.
+
+    Email to:-
+
+    wisecracker@tesco.net
+
+    BYE.....
+
+============================================================================

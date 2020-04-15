@@ -1,0 +1,10 @@
+Echo "Removing the mouse pointer..."
+sys:prefs/Pointer from OffWB2 use
+Echo ""
+Echo "Now starting the testcard generator..."
+ColourTest
+Echo ""
+Echo "Enabling mouse pointer..."
+sys:prefs/Pointer from OnWB2 use
+Echo ""
+Echo "Quitting..."
